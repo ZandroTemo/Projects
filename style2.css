@@ -1,0 +1,82 @@
+* {
+    box-sizing: border-box;
+}
+
+
+body {margin: 0;
+    font-family: 'courier new', monospace;
+    background: url('foodwallpaper.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+.navbar {
+    overflow: hidden;
+    background-color: #0d0b05d7;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    }
+
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 16px;
+    
+}
+
+.navbar a:hover {
+    background: red;
+    color: black;
+}
+
+.header {
+    text-align: center;
+    padding: 32px;
+    font-size: 2.5em;
+    background-color: #ffffffb8;
+    border-radius: 25px;
+}
+
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+    background-color: #ffffffb8;
+    border-radius: 25px;
+}
+
+.column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+ 
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+.box-box {
+    margin: 25px;
+}
